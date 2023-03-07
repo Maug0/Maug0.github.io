@@ -31,24 +31,10 @@ ngOnInit(): void {
     escuela: "",
   }
 
-  let education2 = {
-    grado: "",
-    fechas: "",
-    escuela: "",
-  }
-
-  let education3 = {
-    grado: "",
-    fechas: "",
-    escuela: "",
-  }
 
   this.workExperience.push(work1);
 
   this.educationList.push(education1);
-  this.educationList.push(education2);
-  this.educationList.push(education3);
-
 }
 
 }
