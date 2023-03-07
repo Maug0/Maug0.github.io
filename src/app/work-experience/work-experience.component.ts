@@ -7,4 +7,48 @@ import { Component } from '@angular/core';
 })
 export class WorkExperienceComponent {
 
+  workExperience : Array<any> = [];
+
+  educationList : Array<any> = [];
+
+constructor() { }
+
+ngOnInit(): void {
+
+  let work1 = {
+    fecha: "",
+    ubicacion: "",
+    puesto: "",
+    empresa: "",
+    logros : [
+      { descripcion: "" },
+    ]
+  };
+
+  let education1 = {
+    grado: "",
+    fechas: "",
+    escuela: "",
+  }
+
+  let education2 = {
+    grado: "",
+    fechas: "",
+    escuela: "",
+  }
+
+  let education3 = {
+    grado: "",
+    fechas: "",
+    escuela: "",
+  }
+
+  this.workExperience.push(work1);
+
+  this.educationList.push(education1);
+  this.educationList.push(education2);
+  this.educationList.push(education3);
+
+}
+
 }
