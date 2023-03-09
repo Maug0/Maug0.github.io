@@ -1,0 +1,21 @@
+<body class="bodyTable">
+    <h3>Skills</h3>
+        <ul *ngFor="let skill of skillList">
+            <li>
+                <tr>
+                    <td>{{ skill.skill }}</td>
+                </tr>
+        </ul>
+    <h3> Languages </h3>
+        <ul *ngFor="let language of languageList">
+            <li>
+                <tr>
+                    <td><b>{{ language.language }}</b></td>
+                </tr>
+                <tr>
+                    <td>Nivel: {{ language.level }}</td>
+                </tr>
+                
+            </li>
+        </ul>
+    </body>
